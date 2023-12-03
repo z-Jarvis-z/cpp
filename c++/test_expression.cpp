@@ -6,8 +6,3 @@ static void test()
 	double a = expression_to_evaluation(s);
 	std::cout<<a<<std::endl;
 }
-int main()
-{
-	test();
-	return 0;
-}
