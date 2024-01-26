@@ -68,7 +68,7 @@ std::string infix_to_postfix(std::string& infix)
 	std::stack<char> stk;
 	std::string postfix;
 
-	for (int i = 0; i < infix.size(); ++i)
+	for (unsigned int i = 0; i < infix.size(); ++i)
 	{
 		char ch = infix[i];
 		if (ch == ' ')

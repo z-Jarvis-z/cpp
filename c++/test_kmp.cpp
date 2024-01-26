@@ -12,8 +12,3 @@ static void test()
 	}
 	std::cout << k_m_p(str, pattern) << std::endl;
 }
-int main()
-{
-	test();
-	return 0;
-}
