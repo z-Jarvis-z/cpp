@@ -1,11 +1,15 @@
 #pragma once
 
 template<typename T>
-struct TreeNode {
-    T val;
-    TreeNode* left;
-    TreeNode* right;
-    TreeNode(T x) : val(x), left(nullptr), right(nullptr) {}
+class TreeNode {
+public:
+    virtual T getval()=0;
+    virtual TreeNode* getleft()=0;
+    virtual TreeNode* getright()=0;
+
+    virtual void setval(T val) = 0;
+    virtual void setleft(TreeNode* left) = 0;
+    virtual void setright(TreeNode* riht) = 0;
 };
 
 template<typename T>

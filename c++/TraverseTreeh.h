@@ -9,9 +9,9 @@ public:
 		{
 			return;
 		}
-		std::cout << tnode->val << std::endl;
-		DLR(tnode->left);
-		DLR(tnode->right);
+		std::cout << tnode->getval() << std::endl;
+		DLR(tnode->getleft());
+		DLR(tnode->getright());
 	}
 	static void LDR(TreeNode<T>* tnode)
 	{
@@ -19,9 +19,9 @@ public:
 		{
 			return;
 		}
-		LDR(tnode->left);
-		std::cout << tnode->val << std::endl;
-		LDR(tnode->right);
+		LDR(tnode->getleft());
+		std::cout << tnode->getval() << std::endl;
+		LDR(tnode->getright());
 	}
 	static void LRD(TreeNode<T>* tnode)
 	{
@@ -29,8 +29,8 @@ public:
 		{
 			return;
 		}
-		LRD(tnode->left);
-		LRD(tnode->right);
-		std::cout << tnode->val << std::endl;
+		LRD(tnode->getleft());
+		LRD(tnode->getright());
+		std::cout << tnode->getval() << std::endl;
 	}
 };
