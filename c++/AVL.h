@@ -32,7 +32,7 @@ public:
 
     TreeNode<T>* getroot()
     {
-        return (TreeNode<T>*)m_root;
+        return m_root;
     }
     void insert(T value)
     {
@@ -69,18 +69,6 @@ public:
     };
 
 private:
-    TreeNode<T>* findpre(T value)
-    {
-        TreeNode<T>* tnode = m_root, * pretnode = nullptr;
-        while (tnode != nullptr)
-        {
-            if (value == tnode->getval())
-                break;
-            pretnode = tnode;
-            tnode = (value < tnode->getval()) ? tnode->getleft() : tnode->getright();
-        }
-        return pretnode;
-    }
 
     TreeNode<T>* findnext(TreeNode<T>* tnode)
     {
@@ -132,14 +120,6 @@ private:
             return nullptr;
         update_height(tnode);
         return keep_balance(tnode);
-    }
-
-
-    TreeNode<T>* remove_node(TreeNode<T>* tnode)
-    {
-        
-
-        return tnode;
     }
 
     TreeNode<T>* insert_(TreeNode<T>* tnode, T value)

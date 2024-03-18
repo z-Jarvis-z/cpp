@@ -21,8 +21,3 @@ static void test()
 	tnode_ = dynamic_cast<AVLNode<int>*>(bst.getroot());
 	std::cout << tnode_->getheight() <<"height"<< std::endl;
 }
-int main()
-{
-	test();
-	return 0;
-}

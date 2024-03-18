@@ -28,7 +28,7 @@ public:
 
     TreeNode<T>* getroot()
     {
-        return (TreeNode<T>*)m_root;
+        return m_root;
     }
     void insert(T value)
     {
